@@ -57,7 +57,7 @@ int main() {
     MQTT::Client<MQTTWIZ, Countdown> client = MQTT::Client<MQTTWIZ, Countdown>(ipstack);
     
     DHT sensor(D14, DHT11);
-    char* hostname = "172.16.73.4";
+    char* hostname = "iot.eclipse.org";
     int port = 1883;
     
     int rc = ipstack.connect(hostname, port);
